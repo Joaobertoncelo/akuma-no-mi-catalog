@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #49b2db;
+    color: #000;
+}
+
+body.dark {
+    background-color: #24054b;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+header .logo{
+    width: 50px;
+    height: 50px;
+}
+
+header .button{
+    width: 100px;
+    height: 50px;
+}
+
+header #theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .button:hover,
+main .fruit-card:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+main {
+    padding: 25px;
+}
+
+.fruit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.fruit-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+header .fruit-card:hover {
+    background-color: #96d9d6;
+}
+
+.dark .fruit-card {
+    background-color: #4d0f4d;
+}
+
+main .fruit-card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .fruit-card .info span {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+main .fruit-card .fruit-image {
+    width: 90px;
+    height: 90px;
+}
+
+main .fruit-card .types {
+    display: flex;
+    gap: 8px;
+}
+
+main .fruit-card .fruit-type {
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.zoan {
+    background-color: #9bcc50;
+}
+
+.paramecia {
+    background-color: #b97fc9;
+}
+
+.logia {
+    background-color: #fd7d24;
+}
+
+.mythical {
+    background-color: #e6f118;
+}
+
+.common {
+    background-color: #919290;
+}
+
+main .fruit-card .description {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+}
